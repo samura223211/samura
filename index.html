@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050505">
+<title>Samura — links</title>
+<style>
+:root{color-scheme:dark;--white:#f4f4f4;--muted:#aaa}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+body{min-height:100vh;display:grid;place-items:center;padding:28px 16px;color:var(--white);background:#030303 url("background.png") center center/cover fixed no-repeat}
+body:before{content:"";position:fixed;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.24),rgba(0,0,0,.72) 32%,rgba(0,0,0,.72) 68%,rgba(0,0,0,.3));pointer-events:none}
+.wrap{position:relative;width:min(100%,520px)}
+.topline{display:flex;justify-content:space-between;align-items:center;margin:0 6px 14px;color:#c4c4c4;font-size:11px;letter-spacing:.2em;text-transform:uppercase}
+.live{display:flex;align-items:center;gap:7px}.dot{width:6px;height:6px;border-radius:50%;background:#eee;box-shadow:0 0 9px #fff}
+.card{position:relative;padding:32px 28px 25px;border:1px solid rgba(255,255,255,.2);border-radius:22px;background:rgba(0,0,0,.63);backdrop-filter:blur(14px);box-shadow:0 25px 90px #000a;overflow:hidden}
+.profile{display:flex;align-items:center;flex-direction:column;text-align:center}
+.avatar-shell{width:116px;height:116px;padding:3px;border:1px solid #eee;border-radius:50%;box-shadow:0 0 28px #ffffff30}
+.avatar{width:100%;height:100%;display:block;object-fit:cover;object-position:center 32%;border-radius:50%;filter:grayscale(100%) contrast(1.08)}
+h1{font-family:Georgia,serif;font-style:italic;margin:18px 0 3px;font-size:clamp(42px,9vw,56px);letter-spacing:-.06em;color:#fff;text-shadow:0 0 20px #ffffff35}
+.subtitle{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:#bcbcbc;margin:5px 0 18px}
+.rule{height:1px;width:110px;background:linear-gradient(90deg,transparent,#fff,transparent);margin-bottom:22px}
+.links{display:flex;justify-content:center;gap:13px;margin-bottom:23px}
+.social{display:grid;place-items:center;width:54px;height:54px;border:1px solid #ffffff55;border-radius:15px;background:#ffffff09;color:white;text-decoration:none;transition:.2s}
+.social:hover{transform:translateY(-3px);background:#ffffff20;border-color:white;box-shadow:0 0 20px #ffffff20}
+.social svg{width:24px;height:24px;fill:currentColor}
+.music{padding:15px;border:1px solid #ffffff35;border-radius:16px;background:#0009}
+.music-head{display:flex;align-items:center;gap:12px;margin-bottom:13px}
+.cover{width:54px;height:54px;flex-shrink:0;object-fit:cover;object-position:center;border-radius:9px;filter:grayscale(100%);border:1px solid #ffffff35}
+.track{flex:1;text-align:left;min-width:0}.track strong{display:block;font-size:14px;letter-spacing:.06em}.track small{display:block;margin-top:4px;color:#aaa;font-size:12px}
+.equalizer{display:flex;align-items:center;gap:3px;height:24px}.equalizer i{display:block;width:2px;background:#eee;border-radius:4px;animation:wave .8s ease-in-out infinite alternate}.equalizer i:nth-child(1){height:7px}.equalizer i:nth-child(2){height:16px;animation-delay:.2s}.equalizer i:nth-child(3){height:11px;animation-delay:.4s}.equalizer i:nth-child(4){height:20px;animation-delay:.1s}.equalizer i:nth-child(5){height:8px;animation-delay:.3s}
+@keyframes wave{to{transform:scaleY(.45);opacity:.55}}
+.playrow{display:flex;align-items:center;gap:12px}
+.playbtn{border:1px solid #eee;border-radius:999px;padding:9px 16px;background:#fff;color:#050505;font-weight:750;cursor:pointer}
+.playbtn:hover{background:#ddd}
+.hint{color:#aaa;font-size:10px;line-height:1.45}
+.youtube{display:block;width:100%;aspect-ratio:16/9;border:0;border-radius:10px;margin-top:13px;background:#000}
+.foot{text-align:center;color:#aaa;font-size:10px;letter-spacing:.16em;margin-top:15px}
+@media(max-width:420px){.card{padding:25px 16px 20px}.avatar-shell{width:100px;height:100px}.social{width:50px;height:50px}.topline{font-size:9px}.music{padding:12px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="topline"><span>PERSONAL SPACE / 001</span><span class="live"><i class="dot"></i> ONLINE</span></div>
+  <section class="card">
+    <div class="profile">
+      <div class="avatar-shell"><img class="avatar" src="avatar.jpg" alt="Фото профілю Samura"></div>
+      <h1>Samura</h1>
+      <div class="rule"></div>
+    </div>
+    <nav class="links" aria-label="Соціальні мережі">
+      <a class="social" href="https://www.roblox.com/users/356750974/profile" target="_blank" rel="noopener noreferrer" aria-label="Roblox" title="Roblox">
+        <svg viewBox="0 0 24 24"><path d="M5.1 1.8 22.2 6 18 22.2.8 18zM9 9l-.8 5 5 1 .8-5z"/></svg>
+      </a>
+      <a class="social" href="https://github.com/samura223211" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+        <svg viewBox="0 0 24 24"><path d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.76-.24.76-.54v-2.1c-3.1.68-3.76-1.32-3.76-1.32-.51-1.3-1.24-1.65-1.24-1.65-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15.99 1.7 2.6 1.21 3.23.92.1-.72.39-1.21.7-1.49-2.48-.28-5.09-1.24-5.09-5.53 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.08 1.15a10.7 10.7 0 0 1 5.6 0c2.14-1.45 3.08-1.15 3.08-1.15.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3 0 4.3-2.61 5.24-5.1 5.52.4.35.75 1.03.75 2.08v3.1c0 .3.2.65.77.54A11.2 11.2 0 0 0 12 .8z"/></svg>
+      </a>
+      <a class="social" href="https://www.instagram.com/flnsamura/?hl=uk" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
+        <svg viewBox="0 0 24 24"><path d="M7.2 2h9.6A5.2 5.2 0 0 1 22 7.2v9.6a5.2 5.2 0 0 1-5.2 5.2H7.2A5.2 5.2 0 0 1 2 16.8V7.2A5.2 5.2 0 0 1 7.2 2zm0 2A3.2 3.2 0 0 0 4 7.2v9.6A3.2 3.2 0 0 0 7.2 20h9.6a3.2 3.2 0 0 0 3.2-3.2V7.2A3.2 3.2 0 0 0 16.8 4zm4.8 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.2-3.5a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4z"/></svg>
+      </a>
+    </nav>
+  </section>
+  <div class="foot">SAMURA © <span id="year"></span> · THANKS FOR VISITING</div>
+</main>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
